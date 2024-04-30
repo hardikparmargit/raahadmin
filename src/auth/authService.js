@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const checkSession = async () => {
     try {
-        await axios.post(`${process.env.BACKEND_URL}/session`);
+        await axios.post(`/session`);
         return true; // Session is valid
     } catch (error) {
         return false; // Session is invalid
